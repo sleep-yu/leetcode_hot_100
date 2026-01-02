@@ -1,3 +1,4 @@
+// 区别于买卖股票II，就是多了手续费，所以在卖股票的时候，需要减去手续费fee，再计算更大值
 var maxProfit = function (prices, fee) {
   const dp = Array.from({ length: prices.length }, () => [])
   dp[0][0] = -prices[0]; // 买入当前股票
